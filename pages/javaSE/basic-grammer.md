@@ -1,10 +1,4 @@
----
-layout: post
-title: About the Theme
-tags: [about, Jekyll, theme, moon]
-date: 2016-03-21
-comments: false
----
+
 <p align="center"><font size="6" color="yellow">基础语法之语言概述</font></p>
 ### 一：Java语言平台版本
 * **<font color="red">J2SE（Java 2 Platform Standard Edition）标准版</font>**
