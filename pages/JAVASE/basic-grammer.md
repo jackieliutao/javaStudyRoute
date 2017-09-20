@@ -131,7 +131,7 @@ comments: true
   </tr>
   <tr>
     <td align="center">enum</td>
-    <td align="center"assert</td>
+    <td align="center">assert</td>
     <td align="center"></td>
     <td align="center"></td>
     <td align="center"></td>
