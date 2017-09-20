@@ -127,5 +127,3 @@ comments: true
     <td align="center"></td>
   </tr>
 </tbale>
-
-(1)[关键字的详细解释](http://www.cnblogs.com/AloneZ/p/java1.html)
