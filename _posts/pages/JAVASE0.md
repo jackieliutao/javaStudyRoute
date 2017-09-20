@@ -1,5 +1,5 @@
 ---
-layout: post
+layout: pages
 title:  "JavaSE"
 date:   2017-09-19
 excerpt: "本片文章主要讲解关于javaSE的相关知识。"
