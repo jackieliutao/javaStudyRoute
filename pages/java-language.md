@@ -59,12 +59,3 @@ comments: true
 * 编写java源程序（.java）
 * 通过javac命令编译生成.class文件
 * 通过java命令运行.class文件
-
-## <font color="purple">（二）：Java基础语法</font>
-### 一：关键字
-* 关键字概述
-* * 被Java语言赋予特定含义的单词
-* 关键字特点
-* * 组成关键字的字母全部小写
-* 关键字注意事项
-* * goto和const作为保留子存在，目前并不使用
