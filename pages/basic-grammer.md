@@ -71,7 +71,7 @@ comments: true
     <td align="center">catch</td>
     <td align="center">throw</td>
     <td align="center">throws</td>
-    <td align="center"></td>
+    <td align="center">finally</td>
     <td align="center"></td>
   </tr>
   <tr>
@@ -126,6 +126,51 @@ comments: true
     <td align="center"></td>
     <td align="center"></td>
   </tr>
+  <tr>
+    <td  align="center" colspan="6">其他</td>
+  </tr>
+  <tr>
+    <td align="center">enum</td>
+    <td align="center"assert</td>
+    <td align="center"></td>
+    <td align="center"></td>
+    <td align="center"></td>
+    <td align="center"></td>
+  </tr>
 </table>
 
-(1)[关键字的详细解释](http://www.cnblogs.com/AloneZ/p/java1.html)
+(1)[<font color="blue">关键字的详细解释</font>](http://www.cnblogs.com/AloneZ/p/java1.html)[详解来源于Alone章鱼的博客]
+
+### 二：标识符
+* 标识符概述
+* * 标识符是用来给类、对象、方法、变量、接口和自定义数据类型命名的。
+* 组成规则
+* * 英文大小写字母
+* * 数字字符
+* * $和_
+* 注意事项
+* * 不能以数字开头
+* * 不能是java中的关键字
+* * 区分大小写
+* 常见的命名规则<font color="red">（见名知意）</font>
+* * 包：其实就是文件夹，用于把相同的类名进行区分
+* * * 全部小写
+* * * 单级：jackie
+* * * 多级：com.jackie
+* * 类或者接口
+* * * 一个单词：单词的首字母必须大写
+* * * 多个单词：每个单词的首字母必须大写
+* * 方法或者变量
+* * * 一个单词：单词的首字母小写
+* * * 多个单词：从第二个单词开始，每个单词的首字母大写
+* * 常量
+* * * 一个单词：全部大写
+* * * 多个单词：每个字母都大写，单词间用_进行隔开
+
+### 三：注释
+* 注释概述
+* * 用于解释说明程序的文字
+* 注释分类及其格式
+* * 分类
+* * * 单行注释 //
+* * * 多行注释 ```/*...*/```
