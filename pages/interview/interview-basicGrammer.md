@@ -23,3 +23,4 @@ comments: true
 - - 获取数据的二进制的表示形式：
 - 再次：做截取操作，截取成byte
 - 最后：根据已知的补码求原码
+- ![image](../../assets/img/JAVASE/java-02.png)
