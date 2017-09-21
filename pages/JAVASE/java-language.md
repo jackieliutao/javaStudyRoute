@@ -28,7 +28,7 @@ comments: true
 * **<font color="red">开源</font>**
 * **<font color="red">跨平台《操作系统》</font>**
 
-* ![image](../assets/img/JAVASE/java-01.png)
+* ![image](../../assets/img/JAVASE/java-01.png)
 
 ### 三：JRE、JDK和JVM
 * **<font color="red">JRE（Java Runtime Environment）Java运行环境</font>**
