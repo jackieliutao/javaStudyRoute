@@ -58,7 +58,7 @@ comments: true
   <tr>
     <td align="center">else</td>
     <td align="center">for</td>
-    <td align="center">instance</td>
+    <td align="center">instanceof</td>
     <td align="center">switch</td>
     <td align="center">case</td>
     <td align="center">default</td>
@@ -310,26 +310,23 @@ comments: true
     <td>byte</td>
     <td>1字节</td>
     <td>-128 - 127</td>
-      <td></td>
-
+    <td rowspan="4">int</td>
   </tr>
   <tr align="center">
     <td>short</td>
     <td>2字节</td>
     <td>-2<sup>15</sup> - 2<sup>15</sup> - 1</td>
-      <td></td>
   </tr>
   <tr align="center">
     <td>int</td>
     <td>4字节</td>
-    <td></td>
-      <td></td>
+    <td>-2<sup>31</sup> - 2<sup>31</sup> - 1</td>
   </tr>
   <tr align="center">
     <td>long</td>
     <td>8字节</td>
-    <td></td>
-      <td></td>
+    <td>-2<sup>63</sup> - 2<sup>63</sup> - 1</td>
+
   </tr>
   <tr align="center">
     <td colspan="4">数据类型——浮点数</td>
@@ -343,14 +340,13 @@ comments: true
   <tr align="center">
     <td>float</td>
     <td>4字节</td>
-    <td></td>
-      <td></td>
+    <td>-3.402823E38 - 3.402823E38</td>
+    <td rowspan="2">double</td>
   </tr>
   <tr align="center">
     <td>double</td>
     <td>8字节</td>
-    <td></td>
-      <td></td>
+    <td>-1.797,693,134,862,32E308 - 1.797,693,134,862,32E308</td>
   </tr>
   <tr align="center">
     <td colspan="4">数据类型——字符型</td>
@@ -379,10 +375,9 @@ comments: true
   <tr align="center">
     <td>boolean</td>
     <td>1字节</td>
-    <td></td>
-      <td></td>
+    <td>false,true</td>
+    <td>false</td>
   </tr>
-
 </table>
 
 * 数据类型转换
@@ -398,3 +393,38 @@ comments: true
 * * * 可能会有精度的损失，一般不建议使用
 * * * 格式
 * * * * 目标数据类型 变量名 = （目标数据类型）（被转换的数据）
+
+
+* **<font color="red">知识补充</font>**
+
+* 1：在定义Long或者Float类型变量的时候，要加L或f。
+* * 整数默认是int类型，浮点数默认是double类型。
+* 2： byte、short在定义的时候接收的其实是一个int类型的值。当定义的数据在byte的范围内时，程序会正常运行，否在在编译过程中会报错。
+* * byte b1 = 127;
+* * byte b2 = (byte)128;  //-128
+* * byte b3 = (byte)129;  //-127
+* * byte b4 = (byte)130;  //-126
+* * byte的范围：-128 ~ 127
+* * 128：10000000
+* * -128：10000000（这里的1既是符号位，也是数值位）
+* 3：数据类型转换之默认转换
+* * byte/short/char-->int-->long-->float-->double
+* * long：8 字节
+* * float：4字节
+* * **<font color="red">它们的底层存储结构不相同</font>**
+* * **<font color="red">flaot表示的数据范围比long的范围要大</font>**
+* 4：Java语言的字符char可以存储一个中文汉字吗？为什么呢？
+* * 可以。因为java语言中的字符占用两个字节。
+* * Java语言采用的是Unicode编码。
+
+
+* Unicode编码表
+
+* ![image](../../assets/img/JAVASE/java-10.jpg)
+
+
+* ASC码表
+
+![image](../../assets/img/JAVASE/java-09.jpg)
+
+### 七：运算符
