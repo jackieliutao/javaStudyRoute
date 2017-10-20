@@ -15,7 +15,7 @@ comments: true
 * [7、Struts标签库](#strutsTag)
 
 
-[<h1 style="color:blue;text-align:center">Struts</h1> ](http://struts.apache.org/)
+[<font color="blue">Struts</font>](http://struts.apache.org/)
 
 <h3 id="struts2">一：Struts2框架入门</h3>
 <h3 id="action">二：动作Action</h3>
