@@ -31,7 +31,7 @@ comments: true
 * * 关键字注意事项
 * * * goto和const作为保留子存在，目前并不使用
 
-<table>
+<table border="1">
   <tr>
   <td colspan="6" align="center">访问控制</td>
   </tr>
