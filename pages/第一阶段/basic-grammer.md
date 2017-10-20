@@ -23,7 +23,7 @@ comments: true
 
 <h2 id="basicGrammer">二：Java语法基础</h2>
 
-- <h3 id="keyWords">（一）关键字</h3>
+- <h3 id="keyWords" style="color:red;font-weight:bold">（一）关键字</h3>
 * * 关键字概述
 * * * 被Java语言赋予特定含义的单词
 * * 关键字特点
@@ -159,7 +159,7 @@ comments: true
 
 (1)[<font color="blue">关键字的详细解释</font>](http://www.cnblogs.com/AloneZ/p/java1.html)[详解来源于Alone章鱼的博客]
 
-- - <h3 id="symbol">（二）标识符</h3>
+- <h3 id="symbol" style="color:red;font-weight:bold">（二）标识符</h3>
 * 标识符概述
 * * 标识符是用来给类、对象、方法、变量、接口和自定义数据类型命名的字符序列。
 
@@ -192,7 +192,7 @@ comments: true
 * * * 多个单词：每个字母都大写，单词间用_进行隔开
 
 
-- - <font color="red">（三）注释</font>
+- <h3 id="annotation" style="color:red;font-weight:bold">（三）注释</h3>
 * 注释概述
 * * 用于解释说明程序的文字
 
@@ -207,6 +207,33 @@ comments: true
 * * 解释说明程序，提高了代码的阅读性
 * * 可以帮助我们调试程序
 
+- <h3 id="constant" style="color:red;font-weight:bold">（四）常量</h3>
+
+* 常量概述
+* * 在程序执行过程中其值不会发生改变的量。
+
+
+* 常量的分类
+* * 字面值常量
+* * * 字符串常量(用双引号扩起来的内容)，如"hello","hello world"
+* * * 整数常量（所有的整数）
+* * * 小数常量（所有的小数）
+* * * 字符常量（用单引号扩起来的内容），如'a','A'
+* * * 布尔常量（boolean）<font color="red">有true和false两个值</font>
+* * * 空常量（null）
+
+
+* 在Java中针对整数常量提供了四种表现形式
+* * 二进制
+* * * 由0、1组成，以0b开头
+* * 八进制
+* * * 由0、1、2..7组成，以0开头
+* * 十进制
+* * * 由0、1、2、3...9组成，整数默认为十进制
+* * 十六进制
+* * * 由0、1...9，a/b/c/d/e/f(大小写均可)，以0x（0X）开头
+
+* * 自定义常量
 <h2 id="flowControl">三：程序流程控制</h2>
 <h2 id="methodApplication">四：方法及应用</h2>
 <h2 id="arrayApplication">五：数组及应用</h2>
