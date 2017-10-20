@@ -5,6 +5,7 @@ date:   2017-10-19
 comments: true
 ---
 
+[TOC]
 * [1、JDK环境搭建](#buildJDK)
 * [2、Java语法基础](#basicGrammer)
 * * [2.1、关键字](#keyWords)
