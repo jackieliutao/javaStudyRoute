@@ -156,18 +156,16 @@ comments: true
 - - 运行状态转换为死亡状态：当此线程执行体执行完毕或发生了异常。
 
 
-- - **<font color="red">注意：</font>当调用线程的yield()方法时，线程从运行状态转换为就绪状态，但接下来CPU调度就绪状态中的哪个线程具有一定的随机性，因此，可能会出现A线程调用了yield()方法后，接下来CPU仍然调度了A线程的情况。</font>**
+- - **<font color="red">注意：</font>当调用线程的yield()方法时，线程从运行状态转换为就绪状态，但接下来CPU调度就绪状态中的哪个线程具有一定的随机性，因此，可能会出现A线程调用了yield()方法后，接下来CPU仍然调度了A线程的情况。**</font>
 
 - - 由于实际的业务需要，常常会遇到需要在特定时机终止某一线程的运行，使其进入到死亡状态。目前最通用的做法是设置一boolean型的变量，当条件满足时，使线程执行体快速执行完毕。如：
 
+
 ```
 public class ThreadTest {
-
     public static void main(String[] args) {
-
         MyRunnable myRunnable = new MyRunnable();
         Thread thread = new Thread(myRunnable);
-
         for (int i = 0; i < 100; i++) {
             System.out.println(Thread.currentThread().getName() + " " + i);
             if (i == 30) {
@@ -179,7 +177,6 @@ public class ThreadTest {
         }
     }
 }
-
 class MyRunnable implements Runnable {
 
     private boolean stop;
@@ -194,6 +191,74 @@ class MyRunnable implements Runnable {
     public void stopThread() {
         this.stop = true;
     }
+
+}
+```
+
+* ### 四：Java多线程的阻塞状态与线程控制
+
+* 1、join()
+*  join——让一个线程等待另一个线程完成才继续执行。如A线程线程执行体中调用B线程的join()方法，则A线程被阻塞，直到B线程执行完为止，A才能得以继续执行。
+
+```
+  public class ThreadTest{
+    public static void main(String[] args){
+      MyRunnable myRunnable = new MyRunnable();
+      Thread thread = new Thread(myRunnable);
+      for(int i = 0; i < 100; i++){
+        System.out.println(Thread.currentThread().getName() + " " + i);
+        if(i == 30){
+          thread.start();
+          try {
+            //main线程需要等待thread线程执行完后才能继续执行
+            thread.join();
+          } catch (InterruptedException e) {
+            e.printStackTrace();
+          }
+        }
+      }
+    }
+  }
+
+  class MyRunnable implements Runnable{
+    @Override
+    public void main run(){
+      for(int i = 0 ;i < 100; i++){
+        System.out.println(Thread.currentThread().getName() + " " + i);
+      }
+    }
+  }
+```
+
+* 2、sleep()
+* sleep——让当前的正在执行的线程暂停指定的时间，并进入阻塞状态。在其睡眠的时间段内，该线程由于不是处于就绪状态，因此不会得到执行的机会。即使此时系统中没有任何其他可执行的线程，处于sleep()中的线程也不会执行。因此sleep()方法常用来暂停线程执行。
+
+```
+public class ThreadSleep {
+public static void main(String[] args) {
+  MyRunnable myRunnable = new MyRunnable();
+  Thread thread = new Thread(myRunnable);
+  for(int i = 0; i < 100; i++){
+    System.out.println(Thread.currentThread().getName()+ " " + i);
+    if(i == 30){
+      thread.start();
+      try {
+        //使得thread能够马上执行
+        Thread.sleep(1);
+      } catch (InterruptedException e) {
+        e.printStackTrace();
+      }
+    }
+  }
+}
+}
+class MyRunnable implements Runnable{
+@Override
+public void run() {
+  for(int i = 0; i < 100; i++){
+    System.out.println(Thread.currentThread().getName()+" " + i);
+  }
+}
 
 }
 ```
