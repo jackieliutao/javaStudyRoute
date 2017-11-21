@@ -9,7 +9,7 @@ comments: true
 [二：StringBuilder和StringBuffer、StringBuilder和String的区别](#String)
 
 
-<h3 id="fuzhi>赋值问题</h3>
+<h3 id="fuzhi">赋值问题</h3>
 ```byte b = 130;```
 
 > 上面的赋值语句是否存在问题？若存在问题，应该如何更改？更改后赋值的结果是多少？
