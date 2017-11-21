@@ -32,7 +32,7 @@ comments: true
 
 <h3 id="String">StringBuilder和StringBuffer、StringBuilder和String的区别</h3
 
-- <font color="red" size="15">StringBuilder和StringBuffer</font>
+- <font color="red" size="5">StringBuilder和StringBuffer</font>
 - - StringBuilder线程不安全，效率高，建议使用
 - - StringBuffer线程安全，效率低，不建议使用
 - <font color="red" size="6">StringBuilder和String的区别</font>
