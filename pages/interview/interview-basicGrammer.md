@@ -55,3 +55,7 @@ public class Test {
 以上代码的运行结果如下：
 
 ![image](../../assets/img/JAVASE/interview-string.png)
+
+内存分析图如下：
+
+![image](../../assets/img/JAVASE/String-内存分析.png)
