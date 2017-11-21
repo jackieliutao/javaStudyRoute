@@ -30,7 +30,7 @@ comments: true
 - 最后：根据已知的补码求原码
 - ![image](../../assets/img/JAVASE/java-02.png)
 
-<h3 id="String">StringBuilder和StringBuffer、StringBuilder和String的区别</h3
+<h3 id="String">StringBuilder和StringBuffer、StringBuilder和String的区别</h3>
 
 - <font color="red" size="5">StringBuilder和StringBuffer</font>
 - - StringBuilder线程不安全，效率高，建议使用
@@ -50,6 +50,7 @@ public class Test {
 	}
 }
 ```
+
 以上代码的运行结果如下：
 
 ![image](../../assets/img/JAVASE/interview-string.png)
