@@ -9,7 +9,7 @@ comments: true
 [二：StringBuilder和StringBuffer、StringBuilder和String的区别](#String)
 
 
-<h3 id="fuzhi">赋值问题</h3>
+<h3 id="fuzhi"><font color="red" size="5">赋值问题</font></h3>
 
 ```byte b = 130;```
 
@@ -31,9 +31,9 @@ comments: true
 - 最后：根据已知的补码求原码
 - ![image](../../assets/img/JAVASE/java-02.png)
 
-<h3 id="String">StringBuilder和StringBuffer、StringBuilder和String的区别</h3>
+<h3 id="String"><font color="red" size="5">StringBuilder和StringBuffer、StringBuilder和String的区别</font></h3>
 
-- <font color="red" size="5">StringBuilder和StringBuffer</font>
+- <font color="red">StringBuilder和StringBuffer</font>
 - - StringBuilder线程不安全，效率高，建议使用
 - - StringBuffer线程安全，效率低，不建议使用
 - <font color="red" size="6">StringBuilder和String的区别</font>
