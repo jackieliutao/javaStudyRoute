@@ -35,7 +35,7 @@ comments: true
 - <font color="red" size="15">StringBuilder和StringBuffer</font>
 - - StringBuilder线程不安全，效率高，建议使用
 - - StringBuffer线程安全，效率低，不建议使用
-- <font color="red" size="15">StringBuilder和String的区别</font>
+- <font color="red" size="6">StringBuilder和String的区别</font>
 - - String是不可变字符串，StringBuilder是可变字符串.String之所以是不可变字符串是因为在String的底层代码中，规定了String类的成员属性字符数组为private final char values[]，是由final关键字修饰的，因此意味着，string一旦被赋值便不能在被改变。但是会产生如下疑问:
 
 ```
@@ -50,4 +50,4 @@ public class Test {
 }
 ```
 以上代码的运行结果如下：
-![image](../images/interview-string.png)
+![image](../../assets/img/JAVASE/interview-string.png)
