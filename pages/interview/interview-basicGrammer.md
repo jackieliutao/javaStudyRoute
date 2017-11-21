@@ -5,7 +5,8 @@ date:   2017-09-21
 comments: true
 ---
 [一： 关于byte b = 130赋值语句是否正确](#fuzhi)
-[二：StringBuilder和StringBuffer、StringBuilder和String的区别][#String]
+
+[二：StringBuilder和StringBuffer、StringBuilder和String的区别](#String)
 
 
 <h3 id="fuzhi>赋值问题</h3>
@@ -49,3 +50,4 @@ public class Test {
 }
 ```
 以上代码的运行结果如下：
+![image](../images/interview-string.png)
